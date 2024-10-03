@@ -1,0 +1,30 @@
+// ----------- By Henrik Andersen ---------- 
+
+$phone: 640px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1280px;
+
+@mixin phone {
+    @media only screen and (min-width: $phone) {
+      @content;
+    }
+  }
+
+@mixin tablet {
+    @media only screen and (min-width: $tablet) {
+      @content;
+    }
+  }
+  
+  @mixin laptop {
+    @media only screen and (min-width: $laptop) {
+      @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media only screen and (min-width: $desktop) {
+      @content;
+    }
+  }
